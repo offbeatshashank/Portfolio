@@ -5,15 +5,14 @@ import{motion, useInView} from 'framer-motion'
 
 const variants ={
     initial:{
-        x:-500,
-        y:100,
+        scale:0,
         opacity:0
     },
     animate:{
 
-        x:0,
+        scale:1,
         opacity:1,
-        y:0,
+        
         transition:{
             duration:1,
             staggerChildren:0.1,
@@ -64,7 +63,7 @@ const Services = () => {
             <p>
             Crafting custom websites that captivate and convert. Elevate your online presence with our expert team.
             </p>
-            <Link to={"#Contact"}><button>Email us</button></Link>
+            <Link to={"#Contact"}><button>Go</button></Link>
         </motion.div>
 
         <motion.div className="box" whileHover={{background:"lightgray",color:"black"}}>
@@ -72,7 +71,7 @@ const Services = () => {
             <p>
             Creating websites that are optimized for various devices and screen sizes, including desktops, laptops, tablets, and smartphones.
             </p>
-            <Link to={"#Contact"}><button>Email us</button></Link>
+            <Link to={"#Contact"}><button>Go</button></Link>
         </motion.div>
 
         <motion.div className="box" whileHover={{background:"lightgray",color:"black"}}>
@@ -80,7 +79,7 @@ const Services = () => {
             <p>
             Creating user-friendly designs that make your website shine. Elevate your brand with our expert UI/UX team.
             </p>
-            <Link to={"#Contact"}><button>Email us</button></Link>
+            <Link to={"#Contact"}><button>Go</button></Link>
         </motion.div>
 
         <motion.div className="box" whileHover={{background:"lightgray",color:"black"}}>
@@ -88,7 +87,7 @@ const Services = () => {
             <p>
             Providing ongoing maintenance, updates, and technical support to keep websites secure and running smoothly.
             </p>
-            <Link to={"#Contact"}><button>Email us</button></Link>
+            <Link to={"#Contact"}><button>Go</button></Link>
         </motion.div>
 
       </motion.div>
