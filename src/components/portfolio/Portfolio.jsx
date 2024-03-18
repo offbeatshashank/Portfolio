@@ -7,28 +7,22 @@ import "./portfolio.scss"
 const items =[
     {
         id:1,
-        title:"React Commerce",
-        img:"/a.jpg",
-        desc:"A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs."
+        title:"React Portfolio Website",
+        img:"/react1.png",
+        desc:"The React Portfolio Animated Website is a dynamic showcase built with HTML, JavaScript, SCSS, and Framer Motion. It features smooth animations and transitions, providing an engaging user experience. With React, the site is responsive and interactive, allowing seamless navigation. SCSS ensures stylish and consistent design throughout the website. Overall, it's a professional and visually appealing portfolio that highlights the developer's skills effectively."
     },
     {
         id:2,
-        title:"music app",
-        img:"/b.webp",
-        desc:"A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs."
+        title:"Student Registration System with Database",
+        img:"/srs.jpg",
+        desc:"The Student Registration System is a Python application with a Tkinter interface, utilizing MS Excel as the database. It offers a straightforward way to input and manage student data, including details like name, class, gender, and parent information. The system streamlines administrative tasks, providing automatic registration number generation and photo upload functionality. With its simplicity and efficiency, it's a valuable tool for educational institutions to maintain student records."
     },
     {
         id:3,
-        title:"fb clone",
-        img:"/c.webp",
-        desc:"A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs."
+        title:"FB UI Clone",
+        img:"/fbui.webp",
+        desc:"The Facebook UI Clone is a replica of the popular social media platform created using HTML, CSS, and JavaScript. It faithfully mirrors Facebook's design and functionality, featuring responsive layouts and interactive elements like likes and comments. With attention to detail, this project showcases proficiency in front-end development and offers users an authentic Facebook experience on both desktop and mobile devices."
     },
-    {
-        id:4,
-        title:"netflix",
-        img:"d.jpeg",
-        desc:"A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs."
-    }
 ]
 
 const Single = ({item}) =>{

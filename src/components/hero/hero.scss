@@ -37,6 +37,10 @@
             font-size: 30px;
             color: rebeccapurple;
             letter-spacing: 10px;
+            @include mobile{
+                font-size: 24px;
+                padding-left: 15px;
+            }
         }
 
         h1{
@@ -48,6 +52,13 @@
         }
 
         .buttons{
+
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                gap: 20px;
+            }
             button{
                 padding: 20px;
                 border: 1px solid white;
@@ -56,8 +67,8 @@
                 color: white;
                 margin-right: 20px;
                 cursor: pointer;
-                font-weight: 300;
-                
+                font-weight: 600;
+                font-size: 15px;
 
             }
 
@@ -70,32 +81,118 @@
         }
     }
 
-.imgcontainer{
+.grid{
           
     height: 100%;
-    
+    width: 50%;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
     top : 0;
     right: 0;
-    
+  
     
 
     @include mobile{
+        padding-bottom: 30px;
         height: 50%;
         width: 100%;
         top: unset;
         bottom: 0;
     }
-    img{
-        width: 100%;
-        height: 100%;
+    .hexagon-gallery{
+        height: 454px;
+        width: 495px;
         object-fit: cover ;
+        position: relative;
+        z-index: 2;
+        display: grid;
+        place-items: center;
+
+        @include mobile{
+            height: 320px;
+            width: 370px;
         
+        }
+
+        .hexagon{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+           
+
+            .hex{
+             width: 144px;
+             height: 159px;
+             display: flex;
+             margin: 10px;
+             background: white;
+             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+             justify-content: center;
+             align-items: center;
+
+             @include mobile{
+                width: 100px;
+                height: 110px;
+                margin: 8px;
+                
+            }
+
+             cursor: pointer;
+             h1{
+                color: #0c0c1d;
+                font-family: "Libre Barcode 39 Text", system-ui;
+                font-size: 35px;
+                @include mobile{
+                    font-size: 30px;
+             }}
+            span{
+             width: 144px;
+             height: 153px;
+             display: flex;
+             margin: 3px;
+             background:linear-gradient(180deg, #0c0c1d , #111132);
+             clip-path:polygon(50% 0% ,100% 25% ,100% 75% ,50% 100% , 0% 75% ,0% 25%);
+             justify-content: center;
+             align-items: center;
+
+             @include mobile{
+                width: 100px;
+                height: 105px;
+            }
+
+             img{
+               width: 65px;
+               height:65px;
+               object-fit: cover;}
+           
+            }
+          
+            }
+
+        &:nth-child(1) {
+            // Styles for the first hexagon
+        top: 0;
+        
+        }
+        &:nth-child(3) {
+            // Styles for the first hexagon
+        bottom: 0;
+
+        }
+        }
+        }
+      
     }
-
+  
 }
 
-}
+
 
 .slidingtext{
     position: absolute;

@@ -29,6 +29,7 @@ const textVariants ={
 }
 
 
+
 const sliderVariants ={
   initial:{
     x:0,
@@ -79,13 +80,50 @@ const Hero = () => {
       </motion.div>
 
       <motion.div className="slidingtext" variants={sliderVariants} initial="initial" animate="animate">
-      Web devoloper and UI designer
+      Web devoloper UI designer
         </motion.div>
 
 
       </div>
-        <div className="imgcontainer">
-            <img src="/hero (1).png" alt="" />
+        <div className="grid">
+            <div className='hexagon-gallery'>
+
+              <div className="hexagon">
+                <motion.div className="hex" whileHover={{scale:1.3}}>
+                  <span>
+                    <img src="/html.png" alt=""/>
+                  </span>
+                </motion.div>
+                <motion.div className="hex" whileHover={{scale:1.3}}>
+                <span><img src="/css.png" alt=""/></span>
+                </motion.div>
+              </div>
+
+              <div className="hexagon">
+                <motion.div className="hex" whileHover={{scale:1.3}}>
+                <span><img src="/js.png" alt=""/></span>
+                </motion.div>
+                <motion.div className="hex"  whileHover={{scale:0.8}} whileTap={{scale:1.3}} >
+                 <h1>  skills  </h1>
+                </motion.div>
+                <motion.div className="hex"whileHover={{scale:1.3}}>
+                <span>
+                <img src="/scss.png" alt=""/>
+                </span>
+                </motion.div>
+              </div>  
+
+              <div className="hexagon">
+                <motion.div className="hex" whileHover={{scale:1.3}}>
+                <span><img src="/react.png" alt=""/></span>
+                </motion.div>
+                <motion.div className="hex" whileHover={{scale:1.3}}>
+                  <span><img className='svg' style={{width:"50px" , height:"50px"}} src="/framer-motion.svg" /></span>
+                  </motion.div>
+              </div>
+               
+            </div>
+            
         </div>
     </div>
   )
